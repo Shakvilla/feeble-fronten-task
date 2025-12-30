@@ -1,0 +1,66 @@
+
+import { Meta, ColorPalette, ColorItem, Typeset } from '@storybook/blocks';
+
+<Meta title="Atoms/Design Tokens" />
+
+# Design Tokens
+
+## Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Brand Blue"
+    subtitle="--brand"
+    colors={{ 'Brand Blue': '#007AFF' }}
+  />
+  <ColorItem
+    title="Brand Dark"
+    subtitle="--dark"
+    colors={{ 'Brand Dark': '#0f172a' }}
+  />
+  <ColorItem
+    title="Brand Light"
+    subtitle="--light"
+    colors={{ 'Brand Light': '#EBF5FF' }}
+  />
+  <ColorItem
+    title="Text"
+    subtitle="--text"
+    colors={{ 'Brand Text': '#1F2937' }}
+  />
+  <ColorItem
+    title="Gray"
+    subtitle="--gray"
+    colors={{ 'Brand Gray': '#6B7280' }}
+  />
+  <ColorItem
+    title="Background"
+    subtitle="--background"
+    colors={{ 'Background': '#ffffff', 'Dark Background': '#0a0a0a' }}
+  />
+  <ColorItem
+    title="Foreground"
+    subtitle="--foreground"
+    colors={{ 'Foreground': '#171717', 'Dark Foreground': '#ededed' }}
+  />
+</ColorPalette>
+
+## Typography
+
+font-family: General Sans (`--font-general-sans`)
+
+<Typeset
+  fontSizes={[
+    '12px',
+    '14px',
+    '16px',
+    '20px',
+    '24px',
+    '32px',
+    '40px',
+    '48px',
+  ]}
+  fontWeight="400"
+  sampleText="The quick brown fox jumps over the lazy dog."
+  fontFamily="var(--font-general-sans)"
+/>

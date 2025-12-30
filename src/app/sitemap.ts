@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://coup.com';
+  const baseUrl = 'https://feeble-frontend-task.vercel.app';
   
   return [
     {
