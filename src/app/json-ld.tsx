@@ -1,7 +1,8 @@
 import React from 'react';
 
 const JsonLd = () => {
-  const jsonLd = {
+  const jsonLd =
+   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'Coup',
@@ -18,11 +19,11 @@ const JsonLd = () => {
       ratingValue: '4.8',
       ratingCount: '150',
     },
-    url: 'https://coup.com',
-    image: 'https://coup.com/images/og-image.png',
+    url: 'https://feeble-frontend-task.vercel.app',
+    image: 'https://feeble-frontend-task.vercel.app/images/og-image.jpg',
     author: {
         '@type': 'Organization',
-        name: 'Coup Inc.'
+        name: 'Feeble Inc.'
     }
   };
 

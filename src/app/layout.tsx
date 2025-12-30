@@ -3,7 +3,7 @@ import { generalSans } from "./fonts";
 import "./globals.css";
 import JsonLd from "./json-ld";
 
-const BASE_URL = "https://coup.com"; 
+const BASE_URL = "https://feeble-frontend-task.vercel.app"; 
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
