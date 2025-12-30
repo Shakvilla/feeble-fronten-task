@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main navigation" [ref=e3]:
+      - generic [ref=e4]:
+        - link "Coup Home" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "Coup Logo" [ref=e6]
+        - menubar [ref=e7]:
+          - menuitem "How it Works" [ref=e8] [cursor=pointer]
+          - menuitem "Pricing" [ref=e9] [cursor=pointer]
+          - menuitem "Use Case" [ref=e10] [cursor=pointer]
+          - menuitem "FAQ" [ref=e11] [cursor=pointer]
+        - generic [ref=e12]:
+          - button "Login" [ref=e13]:
+            - generic [ref=e14]: Login
+          - button "Contact Sales" [ref=e15]:
+            - generic [ref=e16]: Contact Sales
+    - main [ref=e17]:
+      - generic [ref=e18]:
+        - 'status "Version v1.0 - #1 iMessage Automation Tool" [ref=e20]':
+          - generic [ref=e23]: v1.0
+          - generic [ref=e29]: "#1 iMessage Automation Tool"
+        - heading "iMessage Automation for Teams and AI Workflows." [level=2] [ref=e31]
+        - paragraph [ref=e33]: Coup lets you, your team, or AI workflows send iMessages directly from your phone number, running securely on your Mac or Mac Mini.
+        - generic [ref=e34]:
+          - button "Get Started" [ref=e35]:
+            - generic [ref=e36]: Get Started
+          - button "Download the Mac app" [ref=e37]:
+            - img [ref=e39]
+            - generic [ref=e42]: Download the Mac app
+      - generic:
+        - generic:
+          - generic: Scroll to learn more
+          - generic:
+            - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+    - generic:
+      - generic:
+        - img
+      - generic:
+        - img
+  - alert [ref=e43]
+```

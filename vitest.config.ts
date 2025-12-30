@@ -13,7 +13,7 @@ const dirname =
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   test: {
-    // @ts-expect-error - projects is valid but types might be outdated or conflicting
+
     projects: [
       {
         extends: true,

@@ -11,8 +11,11 @@ const meta = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['default', 'secondary', 'destructive', 'outline', 'brand', 'success'],
+      options: ['default', 'solid', 'outline'],
     },
+    animated: {
+        control: 'boolean',
+    }
   },
 } satisfies Meta<typeof Badge>;
 
@@ -26,17 +29,10 @@ export const Default: Story = {
   },
 };
 
-export const Secondary: Story = {
+export const Solid: Story = {
   args: {
-    variant: 'secondary',
-    children: 'Secondary Badge',
-  },
-};
-
-export const Destructive: Story = {
-  args: {
-    variant: 'destructive',
-    children: 'Destructive Badge',
+    variant: 'solid',
+    children: 'Solid Badge',
   },
 };
 
@@ -47,16 +43,16 @@ export const Outline: Story = {
   },
 };
 
-export const Brand: Story = {
-  args: {
-    variant: 'brand',
-    children: 'Brand Badge',
-  },
-};
+export const WithLeftElement: Story = {
+    args: {
+        children: 'Version 2.0',
+        leftElement: <span className="bg-gray-100 px-1.5 py-0.5 rounded text-xs">v2.0</span>
+    }
+}
 
-export const Success: Story = {
-  args: {
-    variant: 'success',
-    children: 'Success Badge',
-  },
-};
+export const Animated: Story = {
+    args: {
+        children: 'Typing...',
+        animated: true,
+    }
+}

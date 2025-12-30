@@ -56,6 +56,6 @@ test.describe('Homepage', () => {
         await hamburger.click();
 
         // Menu items should appear
-        await expect(page.getByText('Use Cases')).toBeVisible();
+        await expect(page.getByText('Use Case')).toBeVisible();
     });
 });

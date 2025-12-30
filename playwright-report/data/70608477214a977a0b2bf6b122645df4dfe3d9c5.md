@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main navigation" [ref=e3]:
+      - generic [ref=e4]:
+        - link "Coup Home" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "Coup Logo" [ref=e6]
+        - button "Close menu" [expanded] [active] [ref=e7]
+    - dialog "Mobile navigation menu" [ref=e13]:
+      - generic [ref=e14]:
+        - link "Coup Logo" [ref=e15] [cursor=pointer]:
+          - /url: /
+          - img "Coup Logo" [ref=e16]
+        - button "Close menu" [ref=e17]:
+          - img [ref=e18]
+      - menu [ref=e20]:
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - menuitem "How it Works" [ref=e23] [cursor=pointer]
+          - listitem [ref=e24]:
+            - menuitem "Pricing" [ref=e25] [cursor=pointer]
+          - listitem [ref=e26]:
+            - menuitem "Use Case" [ref=e27] [cursor=pointer]
+          - listitem [ref=e28]:
+            - menuitem "FAQ" [ref=e29] [cursor=pointer]
+      - generic [ref=e30]:
+        - button "Login" [ref=e31]:
+          - generic [ref=e32]: Login
+        - button "Contact Sales" [ref=e33]:
+          - generic [ref=e34]: Contact Sales
+    - main [ref=e35]:
+      - generic [ref=e36]:
+        - 'status "Version v1.0 - #1 iMessage Automation Tool" [ref=e38]':
+          - generic [ref=e41]: v1.0
+          - generic [ref=e47]: "#1 iMessage Automation Tool"
+        - heading "iMessage Automation for Teams and AI Workflows." [level=2] [ref=e49]
+        - paragraph [ref=e51]: Coup lets you, your team, or AI workflows send iMessages directly from your phone number, running securely on your Mac or Mac Mini.
+        - generic [ref=e52]:
+          - button "Get Started" [ref=e53]:
+            - generic [ref=e54]: Get Started
+          - button "Download the Mac app" [ref=e55]:
+            - img [ref=e57]
+            - generic [ref=e60]: Download the Mac app
+      - generic:
+        - generic:
+          - generic: Scroll to learn more
+          - generic:
+            - img
+        - generic:
+          - img
+    - generic:
+      - generic:
+        - img
+      - generic:
+        - img
+  - alert [ref=e61]
+```
