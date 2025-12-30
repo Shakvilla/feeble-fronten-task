@@ -9,7 +9,12 @@
     "lint": "eslint",
     "analyze": "cross-env ANALYZE=true next build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_3ac3965601060f5",
+    "test:unit": "vitest --project=unit",
+    "test": "npm run test:unit"
+
+    
   },
   "dependencies": {
     "@next/bundle-analyzer": "^16.1.1",

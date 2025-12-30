@@ -52,7 +52,7 @@ const Hero: FC = () => {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="mb-8 "
       >
-        <Heading as="h2" size="2xl" highlight="iMessage">
+        <Heading as="h1" size="hero" highlight="iMessage">
           iMessage Automation for Teams and AI Workflows.
         </Heading>
       </motion.div>

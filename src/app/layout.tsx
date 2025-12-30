@@ -9,7 +9,6 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
 };
 
 export const metadata: Metadata = {
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
   creator: "Coup",
   publisher: "Coup",
   alternates: {
-    canonical: "/",
+    canonical: BASE_URL,
   },
   openGraph: {
     type: "website",
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Coup",
     images: [
       {
-        url: "/images/og-image.jpg", 
+        url: "/images/og-image.png", 
         width: 1200,
         height: 630,
         alt: "Coup - iMessage Automation",
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     title: "Coup - iMessage Automation for Teams and AI Workflows",
     description:
       "Automate iMessage for your team and AI workflows securely on your Mac.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/og-image.png"],
     creator: "@coup_app", 
   },
   icons: {
