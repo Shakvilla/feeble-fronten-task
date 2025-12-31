@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Coup - iMessage Automation for Teams and AI Workflows",
+    default: "Coup - iMessage Automation for Teams and AI Workflows.",
     template: "%s | Coup",
   },
   description:
