@@ -24,7 +24,8 @@ For the bird animations and the entrance effects, I used **Framer Motion**.
 ### Typography & SEO
 I treated fonts and metadata as first-class citizens:
 *   **Fonts**: I used `next/font/local` for General Sans. This eliminates layout shifts (CLS) because Next.js automatically injects the fallback size overrides.
-*   **SEO**: I built a dedicated `JsonLd` component to inject structured data. This helps search engines understand that "Coup" is a software application, not just a blog post.
+*   **JSON-LD**: I didn't stop at basic meta tags. I implemented a dedicated `<JsonLd />` component (see `src/app/json-ld.tsx`) that injects structured data using the `SoftwareApplication` schema.
+    *   *Why?* This gives Google specific details like the operating system (macOS), application category, and price (0). This helps Coup show up with rich snippets in search results, distinguishing it clearly as a downloadable Mac app rather than just a website.
 
 ### Testing Strategy
 I set up **Vitest** for unit testing.
@@ -35,12 +36,11 @@ I set up **Vitest** for unit testing.
 ## Storybook
 I included **Storybook** because I believe in building UI components in isolation. It forces me to define clear component APIs (props) without relying on global app state. You can run `bun storybook` to click through the component inventory I built.
 
-## How to run it
+## How to run the scripts
 
-I use **Bun** for everything because it's fast.
+I use **Bun** for everything because it's fast, but you can use `npm` if you prefer. Here are the main scripts I configured in `package.json`:
 
-1.  `bun install`
-2.  `bun dev` (Runs the app at localhost:3000)
-3.  `bun test` (Runs the unit tests)
-
-Let me know if you have questions about the `BackgroundLayers` logic or the `json-ld` setup.
+*   **`bun dev`**: Starts the development server at `localhost:3000`. This uses Turbopack for instant HMR.
+*   **`bun test`**: Runs the unit test suite using Vitest. It checks all `.test.tsx` files in the components directory.
+*   **`bun storybook`**: Fires up the Storybook UI at `localhost:6006`. This is the best way to visually test the `Button`, `Badge`, and `Typography` components in isolation.
+*   **`bun build`**: Creates the production build. I recommend running this locally before deploying to vercel to check for any build errors.
